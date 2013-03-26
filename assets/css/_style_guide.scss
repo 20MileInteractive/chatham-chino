@@ -12,7 +12,7 @@
 
 .style-subtitle {
 	font-size: 1em;
-	color: $neutral-two;
+	color: $neutral-one;
 	/*text-align: right;*/
 	margin-bottom: 1em;
 }
@@ -56,11 +56,11 @@ div.typography {max-width: 480px;}
 	float: left;}
 
 .neutral-one {background: $neutral-one;}
-.neutral-two {background: $neutral-two;}
+//.neutral-two {background: $neutral-two;}
 
-.accent-one {background: $accent-one;}
-.accent-two {background: $accent-two;}
-.accent-three {background: $accent-three;}
+//.accent-one {background: $accent-one;}
+//.accent-two {background: $accent-two;}
+//.accent-three {background: $accent-three;}
 
 .action-one {background: $primary-color;}
 
