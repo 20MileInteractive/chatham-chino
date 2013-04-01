@@ -1,0 +1,33 @@
+// Base style sheet
+
+//Typography
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+p.intro {
+	font-size: 1.2em;
+	margin-bottom: 1.5em;
+}
+
+blockquote {
+	color: $neutral-one;
+}
+
+
+th {font-family: $header-font-family; text-transform: uppercase; letter-spacing: 3px;}
+
+
+.test-button {
+background: #556675;
+border-color: #556675;
+background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.20) 100%);
+background-image: -moz-linear-gradient(-90deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.20) 100%);
+background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.20) 100%);
+background-image: -ms-linear-gradient(-90deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.20) 100%);
+background-image: linear-gradient(-90deg, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.20) 100%);
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+.test-button:hover {background-color: $success-color;}
