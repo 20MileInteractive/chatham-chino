@@ -10,6 +10,16 @@ p.intro {
 	margin-bottom: 1.5em;
 }
 
+
+a{
+	color: $link;
+}
+
+
+a:hover{
+	color: darken($link,10%);
+}
+
 blockquote {
 	color: $neutral-one;
 }
