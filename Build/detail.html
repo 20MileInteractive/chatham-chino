@@ -43,7 +43,7 @@
 
 <div class="row">
 	<div id="logo" class="small-6 columns">
-		<a class='current' href="index.html"><img src="http://placehold.it/200x100&text=logo"/></a>
+		<a href="index.html"><img src="http://placehold.it/200x100&text=logo"/></a>
 	</div>	  
   <div id="cart" class="small-6 columns">
   	<a href="#">Cart</a>
@@ -58,50 +58,35 @@
 </div>
 
 
+<div id="product-detail-page">
 
-<div id="hero">
-	<img src="http://placehold.it/1600x700/aaa/777&text=lifestyle+photo"/>
-	<div id="home-products"class="row">	
-		<div class="small-4 columns">
-			<a href="listing.html">
-				<img src="http://placehold.it/400x300&text=product+photo"/>
-				Shirts &amp; Tops
-			</a>
-		</div>		
-		<div class="small-4 columns">
-			<a href="listing.html">
-				<img src="http://placehold.it/400x300&text=product+photo"/>
-				Pants &amp; Shorts
-			</a>
-		</div>
-		<div class="small-4 columns">
-			<a href="listing.html">
-				<img src="http://placehold.it/400x300&text=product+photo"/>
-				Accessories
-			</a>
-		</div>		
-	</div>	
-</div>
-
-
-
-<div id="story">
 	<div class="row">
-		<div class="large-12 columns">
-			<img src="http://placehold.it/200x150&text=historic+photo"/>
-			<br/>&nbsp;<br/>
+		<img class="large-6 columns" src="http://placehold.it/800x800&text=Product+Image"/>
+		<div id="product-info" class="large-6 columns">
+			<h3>Product Name</h3>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.
+			</p>
+			<section>
+				<h6>Choose Color</h6>
+				  <a class="color" href="#"><img src="http://placehold.it/60x60/e7194b/fff&text=Color"/></a>
+				  <a class="color" href="#"><img src="http://placehold.it/60x60/9ad857/fff&text=Color"/></a>
+				  <a class="color" href="#"><img src="http://placehold.it/60x60/47b2d3/fff&text=Color"/></a>
+			</section>												
+			<section>
+				<h6>Choose Size</h6>
+				  <img src="http://placehold.it/60x60/eee/ccc&text=S"/>
+				  <a class="size" href="#"><img src="http://placehold.it/60x60&text=M"/></a>
+				  <a class="size" href="#"><img src="http://placehold.it/60x60&text=L"/></a>
+				  <a class="size" href="#"><img src="http://placehold.it/60x60&text=XL"/></a>
+			</section>	
+		
+			<p>
+				<a href="#" class="button" data-reveal-id="cart-confirm">Add To Cart</a>			
+			</p>											
+
 		</div>
 	</div>
-	<div class="row">
-		<div class="large-12 columns">
-			<h5>An Authentic Cape Cod Tradition</h5>
-			<p>Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-			</p>
-			<p>
-				<a class="button" href="#">Read Our Story</a>
-			</p>
-		</div>
-	</div>	
+
 </div>
 
 
@@ -114,6 +99,15 @@
 	</div>
 </div>
 
+
+<div id="cart-confirm" class="reveal-modal medium">
+  <h2>Aye Aye Captain.</h2>
+  <p><b>Product Name</b> has been added to your cart!</p>
+  <p><a class="button" href="cart.html">Go to Checkout</a><a class="button secondary" href="#">Keep Shopping</a>
+  </p>
+  
+  <a class="close-reveal-modal">&#215;</a>
+</div>
     <script src='assets/js/vendor/jquery.js'></script>
     <script src='assets/js/vendor/foundation/foundation.js'></script>
     <script src='assets/js/vendor/foundation/foundation.alerts.js'></script>

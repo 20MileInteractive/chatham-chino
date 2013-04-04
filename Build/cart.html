@@ -40,10 +40,9 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-
 <div class="row">
 	<div id="logo" class="small-6 columns">
-		<a class='current' href="index.html"><img src="http://placehold.it/200x100&text=logo"/></a>
+		<a href="index.html"><img src="http://placehold.it/200x100&text=logo"/></a>
 	</div>	  
   <div id="cart" class="small-6 columns">
   	<a href="#">Cart</a>
@@ -58,53 +57,72 @@
 </div>
 
 
+<div id="checkout">
+	<div class="row">	
+		<div class="small-10 columns small-centered">
+			<div class="product row">				
+				<div class="large-8 columns">
+						<a href="#" data-reveal-id="product-large"><img src="http://placehold.it/100x100&text=Image"/></a>
+						<p>
+						<b>Product Name</b><br/>
+						Color: Navy<br/>
+						Size: Large
+						</p>
+					</div>
+					<div class="large-4 columns">
+					<p>
+						Quantity: 1<br/>
+						<span>Change Quantity</span><br/>
+						<b>$78.00</b>
+					</p>
+					</div>
+					<a class="remove-button" href="#">&#215;</a>
+				</div>
 
-<div id="hero">
-	<img src="http://placehold.it/1600x700/aaa/777&text=lifestyle+photo"/>
-	<div id="home-products"class="row">	
-		<div class="small-4 columns">
-			<a href="listing.html">
-				<img src="http://placehold.it/400x300&text=product+photo"/>
-				Shirts &amp; Tops
-			</a>
-		</div>		
-		<div class="small-4 columns">
-			<a href="listing.html">
-				<img src="http://placehold.it/400x300&text=product+photo"/>
-				Pants &amp; Shorts
-			</a>
-		</div>
-		<div class="small-4 columns">
-			<a href="listing.html">
-				<img src="http://placehold.it/400x300&text=product+photo"/>
-				Accessories
-			</a>
-		</div>		
-	</div>	
-</div>
-
-
-
-<div id="story">
-	<div class="row">
-		<div class="large-12 columns">
-			<img src="http://placehold.it/200x150&text=historic+photo"/>
-			<br/>&nbsp;<br/>
-		</div>
+			</div>		
 	</div>
-	<div class="row">
-		<div class="large-12 columns">
-			<h5>An Authentic Cape Cod Tradition</h5>
-			<p>Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-			</p>
-			<p>
-				<a class="button" href="#">Read Our Story</a>
-			</p>
-		</div>
-	</div>	
+
+	<div class="row">	
+		<div class="small-10 columns small-centered">
+			<div class="product row">				
+				<div class="large-8 columns">
+						<a href="#" data-reveal-id="product-large"><img src="http://placehold.it/100x100&text=Image"/></a>
+						<p>
+						<b>Product Name</b><br/>
+						Color: Navy<br/>
+						Size: Large
+						</p>
+					</div>
+					<div class="large-4 columns">
+					<p>
+						Quantity: 1<br/>
+						<span>Change Quantity</span><br/>
+						<b>$78.00</b>
+					</p>
+					</div>
+					<a class="remove-button" href="#">&#215;</a>
+				</div>
+
+			</div>		
+	</div>
+
+
+
+<div class="row">
+	<div id="proceed"class="large-3 large-offset-8 small-10 small-offset-1">
+		<section>
+Sub-Total:<b>$156</b>
+
+		</section>
+
+		<section>
+			<a href="#" class="button">Proceed To Checkout</a>
+		</section>						
+	</div>
+
 </div>
 
-
+</div>
 <div id="footer">
 	<div class="row">
 		<a href="#">Store Locator</a>
@@ -114,6 +132,11 @@
 	</div>
 </div>
 
+
+<div id="product-large" class="reveal-modal large">
+  <img src="http://placehold.it/900x900&text=Large+Image"/>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
     <script src='assets/js/vendor/jquery.js'></script>
     <script src='assets/js/vendor/foundation/foundation.js'></script>
     <script src='assets/js/vendor/foundation/foundation.alerts.js'></script>
