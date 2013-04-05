@@ -1,0 +1,46 @@
+<!-- @include _top.html -->
+
+<!-- @include _header.html -->
+<div id="product-detail-page">
+
+	<div class="row">
+		<img class="large-6 columns" src="http://placehold.it/800x800&text=Product+Image"/>
+		<div id="product-info" class="large-6 columns">
+			<h3>Product Name</h3>
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.
+			</p>
+			<section>
+				<h6>Choose Color</h6>
+				  <a class="color" href="#"><img src="http://placehold.it/60x60/e7194b/fff&text=Color"/></a>
+				  <a class="color" href="#"><img src="http://placehold.it/60x60/9ad857/fff&text=Color"/></a>
+				  <a class="color" href="#"><img src="http://placehold.it/60x60/47b2d3/fff&text=Color"/></a>
+			</section>												
+			<section>
+				<h6>Choose Size</h6>
+				  <img src="http://placehold.it/60x60/eee/ccc&text=S"/>
+				  <a class="size" href="#"><img src="http://placehold.it/60x60&text=M"/></a>
+				  <a class="size" href="#"><img src="http://placehold.it/60x60&text=L"/></a>
+				  <a class="size" href="#"><img src="http://placehold.it/60x60&text=XL"/></a>
+			</section>	
+		
+			<p>
+				<a href="#" class="button" data-reveal-id="cart-confirm">Add To Cart</a>			
+			</p>											
+
+		</div>
+	</div>
+
+</div>
+
+
+<!-- @include _footer.html -->
+
+<div id="cart-confirm" class="reveal-modal medium">
+  <h2>Aye Aye Captain.</h2>
+  <p><b>Product Name</b> has been added to your cart!</p>
+  <p><a class="button" href="<!-- @path cart.html -->">Go to Checkout</a><a class="button secondary" href="#">Keep Shopping</a>
+  </p>
+  
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!-- @include _bottom.html -->

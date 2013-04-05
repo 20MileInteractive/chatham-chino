@@ -1,0 +1,17 @@
+div#story-page{
+	margin: 2rem auto;
+	
+	:first-child{
+		text-align: center;
+	}
+}
+
+div.date-panel{
+	background: #eee;
+	padding: 1rem 0;
+}
+
+div.line{
+	border-right: 5px solid #eee;
+	padding: 2rem 0;
+}

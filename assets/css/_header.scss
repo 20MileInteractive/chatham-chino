@@ -1,0 +1,43 @@
+div#logo{
+	text-align: left;
+	padding: .5rem;
+}
+
+div#cart{
+	text-align: right;
+	a{
+		padding: .7rem 1.5rem;
+		background: $link;
+		color:#fff;
+		display: inline-block;
+	}
+	
+}
+
+div#nav{
+	width: 100%;
+	background: #eee;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	
+	nav{
+		max-width: 1024px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	a{
+		width: 25%;
+		background: #eee;
+		display: inline-block;
+		text-align: center;
+		padding: .7rem 0;
+		border-right:1px solid #ddd;
+		color: $link;
+	}
+	
+	a:hover{
+		background:#ddd;
+	}
+}
+
