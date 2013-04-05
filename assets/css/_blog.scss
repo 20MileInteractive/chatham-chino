@@ -1,0 +1,18 @@
+div.row.blog-post{
+	margin: 1rem auto;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #eee; 
+	
+	figure{
+		background: #fff;
+	}
+	
+	aside{
+		color: #aaa;
+		transition: all .15s ease-in;
+	}
+	
+	aside:hover{
+		color: #666;
+	}
+}

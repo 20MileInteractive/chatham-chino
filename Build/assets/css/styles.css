@@ -3991,6 +3991,9 @@ div#checkout {
     right: 0;
     margin-top: -6px;
     margin-right: -6px; }
+  div#checkout .undo {
+    text-align: center;
+    display: none; }
 
 div#proceed {
   background: #ccc;
@@ -4004,3 +4007,28 @@ div#contact {
   margin: 2rem auto; }
   div#contact ul {
     list-style-position: inside; }
+
+div#story-page {
+  margin: 2rem auto; }
+  div#story-page :first-child {
+    text-align: center; }
+
+div.date-panel {
+  background: #eee;
+  padding: 1rem 0; }
+
+div.line {
+  border-right: 5px solid #eee;
+  padding: 2rem 0; }
+
+div.row.blog-post {
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee; }
+  div.row.blog-post figure {
+    background: #fff; }
+  div.row.blog-post aside {
+    color: #aaa;
+    transition: all .15s ease-in; }
+  div.row.blog-post aside:hover {
+    color: #666; }
