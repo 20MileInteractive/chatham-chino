@@ -3889,6 +3889,8 @@ footer p {
 div#logo {
   text-align: left;
   padding: .5rem; }
+  div#logo span {
+    font-size: .8rem; }
 
 div#cart {
   text-align: right; }
