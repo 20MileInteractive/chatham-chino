@@ -4034,3 +4034,8 @@ div.row.blog-post {
     transition: all .15s ease-in; }
   div.row.blog-post aside:hover {
     color: #666; }
+
+div#store-location .large-4 span {
+  font-weight: bold;
+  display: block;
+  margibn-bottom: 1rem; }
