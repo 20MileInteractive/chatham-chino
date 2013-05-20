@@ -1,5 +1,7 @@
 // Base style sheet
 
+$color-one: #DE004B; //flag red
+
 //Typography
 h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
@@ -12,7 +14,7 @@ p.intro {
 
 
 a{
-	color: $link;
+	color: $color-one;
 }
 
 

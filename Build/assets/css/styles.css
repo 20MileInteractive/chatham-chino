@@ -12,7 +12,7 @@ body {
 
 body {
   background: white;
-  color: #4a4a4a;
+  color: #333333;
   padding: 0;
   margin: 0;
   font-family: "Georgia", "Times New Roman", serif;
@@ -986,7 +986,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "superclarendon", "Georgia", serif;
+  font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
   font-weight: bold;
   font-style: normal;
   color: #2c2d2e;
@@ -1090,7 +1090,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #4a4a4a;
+  color: #333333;
   border-bottom: 1px dotted #dddddd;
   cursor: help; }
 
@@ -3773,7 +3773,7 @@ p.intro {
   margin-bottom: 1.5em; }
 
 a {
-  color: #2ba6cb; }
+  color: #de004b; }
 
 a:hover {
   color: #2284a1; }
@@ -3782,7 +3782,7 @@ blockquote {
   color: #43454c; }
 
 th {
-  font-family: "superclarendon", "Georgia", serif;
+  font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
   text-transform: uppercase;
   letter-spacing: 3px; }
 
@@ -3850,7 +3850,7 @@ div.typography {
   line-height: 1.5em;
   color: #fff;
   list-style-type: none;
-  font-family: "superclarendon", "Georgia", serif;
+  font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
   text-align: center; }
 
 .color-styles ul.accents li, .color-styles ul.actions li {
@@ -3884,41 +3884,46 @@ footer {
 footer p {
   font-size: 0.6875em;
   text-align: center;
-  font-family: "superclarendon", "Georgia", serif; }
+  font-family: "URWClarendonW01-Regular 923452", "Georgia", serif; }
 
-div#logo {
-  text-align: left;
-  padding: .5rem; }
-  div#logo span {
-    font-size: .8rem; }
+header {
+  background: url(../images/blue-fabric.jpg);
+  border-bottom: 2px solid #fff;
+  padding-bottom: 1rem; }
+  header #logo {
+    text-align: left;
+    padding: 1rem 0 0; }
+    header #logo span {
+      font-size: .8rem; }
+  header div#cart {
+    text-align: right; }
+    header div#cart a {
+      padding: .7rem 1.5rem;
+      background: #2ba6cb;
+      color: #fff;
+      display: inline-block; }
 
-div#cart {
-  text-align: right; }
-  div#cart a {
-    padding: .7rem 1.5rem;
-    background: #2ba6cb;
-    color: #fff;
-    display: inline-block; }
-
-div#nav {
+div#nav-holder {
   width: 100%;
-  background: #eee;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd; }
-  div#nav nav {
+  background: #fff;
+  border-top: 3px double #333; }
+  div#nav-holder nav {
     max-width: 1024px;
     margin: 0 auto;
     text-align: center; }
-  div#nav a {
+  div#nav-holder a {
     width: 25%;
-    background: #eee;
     display: inline-block;
     text-align: center;
     padding: .7rem 0;
-    border-right: 1px solid #ddd;
-    color: #2ba6cb; }
-  div#nav a:hover {
-    background: #ddd; }
+    font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
+    text-transform: uppercase;
+    color: #2c2d2e;
+    font-size: 1.125em;
+    line-height: 19px;
+    letter-spacing: 3px; }
+  div#nav-holder a:hover {
+    color: #de004b; }
 
 #footer {
   background: #222;
