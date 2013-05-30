@@ -1,10 +1,24 @@
 // Base style sheet
 
 $color-one: #DE004B; //flag red
+$color-two: #4B4331; //dark brown
+$secondary-button-color: #958E79;
+$secondary-button-font-color: #E0E0CA;
+
+$background2: #DFDBD4 url(../images/fabric-tan.png);
 
 //Typography
 h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.section-style-two {
+	background: $background2;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $color-two;
+	}
 }
 
 p.intro {
@@ -43,3 +57,25 @@ letter-spacing: 3px;
 }
 
 .test-button:hover {background-color: $success-color;}
+
+.buttons {
+	@include button-base; 
+	@include button-size;
+	@include single-transition;
+	font-family: $header-font-family;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 5px;
+}
+
+.secondary-button { 
+	@extend .buttons;
+	@include button-style($secondary-button-color, 2px);
+	border:3px solid lighten($secondary-button-color, 30%);
+	color: $secondary-button-font-color;
+	background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.06) 100%);
+	background-image: -moz-linear-gradient(-90deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.06) 100%);
+	background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.06) 100%);
+	background-image: -ms-linear-gradient(-90deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.06) 100%);
+	background-image: linear-gradient(-180deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.06) 100%);
+}

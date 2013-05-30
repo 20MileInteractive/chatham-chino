@@ -1,26 +1,38 @@
 header {
 	background: url(../images/blue-fabric.jpg);
 	border-bottom: 2px solid #fff;
-	padding-bottom: 1rem;
+	padding-bottom: .5rem;
 
-	#logo{
-		text-align: left;
-		padding: 1rem 0 0;
+	a.logo-area {
+		width: 300px;
+		text-align: center;
+		display: block;
+		margin: 1rem auto 0;
 
-		span{
-			font-size:.8rem;
-		}
+		.logo {margin-bottom: 1rem;}
 	}
 
-	div#cart{
-		text-align: right;
-		a{
-			padding: .7rem 1.5rem;
-			background: $link;
-			color:#fff;
-			display: inline-block;
+	a.cart-link {
+		position: absolute;
+		top: 0; right: 1rem;
+		padding: .7rem 1.5rem;
+		background: rgb(1,21,38);
+		background: rgba(1,21,38,0.50);
+		font-size: emCalc(14px);
+		color: #678297;
+		display: block;
+		width: auto; height: auto;
+
+		img {
+			vertical-align: middle;
+			margin-right: .5rem;
 		}
-		
+
+	}
+
+	a.cart-link:hover {
+		background: lighten(rgb(1,21,38), 10%);
+		background: lighten(rgba(1,21,38,0.50), 10%);
 	}
 }
 
@@ -55,3 +67,13 @@ div#nav-holder {
 	}
 }
 
+@media only screen and (max-width: 48em) {
+	header a.logo-area {margin: 4rem auto 0;}
+	header a.cart-link {
+		width: 100%;
+		right: auto; left: auto;
+		text-align: right;
+
+		span {display: none;}
+	}
+}

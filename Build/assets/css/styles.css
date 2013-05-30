@@ -986,8 +986,8 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
-  font-weight: bold;
+  font-family: "Clarendon W01", "Georgia", serif;
+  font-weight: normal;
   font-style: normal;
   color: #2c2d2e;
   text-rendering: optimizeLegibility;
@@ -3766,7 +3766,13 @@ table {
     max-width: 800px; }
 
 h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.section-style-two {
+  background: #dfdbd4 url(../images/fabric-tan.png); }
+  .section-style-two h1, .section-style-two h2, .section-style-two h3, .section-style-two h4, .section-style-two h5, .section-style-two h6 {
+    color: #4b4331; }
 
 p.intro {
   font-size: 1.2em;
@@ -3782,7 +3788,7 @@ blockquote {
   color: #43454c; }
 
 th {
-  font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
+  font-family: "Clarendon W01", "Georgia", serif;
   text-transform: uppercase;
   letter-spacing: 3px; }
 
@@ -3799,6 +3805,49 @@ th {
 
 .test-button:hover {
   background-color: #5da423; }
+
+.buttons, .secondary-button {
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0 0 1.25em;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.75em;
+  padding-right: 1.5em;
+  padding-bottom: 0.8125em;
+  padding-left: 1.5em;
+  font-size: 1em;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  font-family: "Clarendon W01", "Georgia", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px; }
+
+.secondary-button {
+  background-color: #958e79;
+  border-color: #7a7461;
+  color: white;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: 3px solid #d9d6ce;
+  color: #e0e0ca;
+  background-image: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%);
+  background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%);
+  background-image: linear, -180deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0.06) 100%; }
+  .secondary-button:hover, .secondary-button:focus {
+    background-color: #7a7461; }
+  .secondary-button:hover, .secondary-button:focus {
+    color: white; }
 
 .style-guide section {
   padding: 1em 0; }
@@ -3850,7 +3899,7 @@ div.typography {
   line-height: 1.5em;
   color: #fff;
   list-style-type: none;
-  font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
+  font-family: "Clarendon W01", "Georgia", serif;
   text-align: center; }
 
 .color-styles ul.accents li, .color-styles ul.actions li {
@@ -3884,24 +3933,37 @@ footer {
 footer p {
   font-size: 0.6875em;
   text-align: center;
-  font-family: "URWClarendonW01-Regular 923452", "Georgia", serif; }
+  font-family: "Clarendon W01", "Georgia", serif; }
 
 header {
   background: url(../images/blue-fabric.jpg);
   border-bottom: 2px solid #fff;
-  padding-bottom: 1rem; }
-  header #logo {
-    text-align: left;
-    padding: 1rem 0 0; }
-    header #logo span {
-      font-size: .8rem; }
-  header div#cart {
-    text-align: right; }
-    header div#cart a {
-      padding: .7rem 1.5rem;
-      background: #2ba6cb;
-      color: #fff;
-      display: inline-block; }
+  padding-bottom: .5rem; }
+  header a.logo-area {
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin: 1rem auto 0; }
+    header a.logo-area .logo {
+      margin-bottom: 1rem; }
+  header a.cart-link {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding: .7rem 1.5rem;
+    background: #011526;
+    background: rgba(1, 21, 38, 0.5);
+    font-size: 0.875em;
+    color: #678297;
+    display: block;
+    width: auto;
+    height: auto; }
+    header a.cart-link img {
+      vertical-align: middle;
+      margin-right: .5rem; }
+  header a.cart-link:hover {
+    background: #023058;
+    background: rgba(2, 48, 88, 0.5); }
 
 div#nav-holder {
   width: 100%;
@@ -3916,7 +3978,7 @@ div#nav-holder {
     display: inline-block;
     text-align: center;
     padding: .7rem 0;
-    font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
+    font-family: "Clarendon W01", "Georgia", serif;
     text-transform: uppercase;
     color: #2c2d2e;
     font-size: 1.125em;
@@ -3925,6 +3987,17 @@ div#nav-holder {
   div#nav-holder a:hover {
     color: #de004b; }
 
+@media only screen and (max-width: 48em) {
+  header a.logo-area {
+    margin: 4rem auto 0; }
+
+  header a.cart-link {
+    width: 100%;
+    right: auto;
+    left: auto;
+    text-align: right; }
+    header a.cart-link span {
+      display: none; } }
 #footer {
   background: #222;
   text-align: center; }
@@ -3944,7 +4017,6 @@ div#nav-holder {
     text-align: center; }
 
 #story {
-  background: #eee;
   margin: 3rem auto;
   padding: 1rem 0; }
   #story div:first-child {

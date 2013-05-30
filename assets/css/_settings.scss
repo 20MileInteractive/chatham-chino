@@ -69,8 +69,8 @@
 //
 
 // We use these to control header font styles
-   $header-font-family: "URWClarendonW01-Regular 923452", "Georgia", serif;
-// $header-font-weight: bold;
+   $header-font-family: "Clarendon W01", "Georgia", serif;
+   $header-font-weight: normal;
 // $header-font-style: normal;
    $header-font-color: #2C2D2E;
    $header-line-height: 1;
@@ -242,12 +242,12 @@
 // $button-function-factor: 10%;
 
 // We use these to control button border styles.
-// $button-border-width: 1px;
-// $button-border-style: solid;
-// $button-border-color: darken($primary-color, $button-function-factor);
+//   $button-border-width: 3px;
+//   $button-border-style: double;
+//   $button-border-color: #fff;
 
 // We use this to set the default radius used throughout the core.
-// $button-radius: $global-radius;
+// $button-radius: 2px;
 
 // We use this to set default opacity for disabled buttons.
 // $button-disabled-opacity: 0.6;
