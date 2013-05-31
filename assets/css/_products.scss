@@ -8,10 +8,14 @@ figure.product{
 	
 	span.name{
 		float: left;
+		font-family: $header-font-family;
+		text-transform: uppercase;
+		letter-spacing: 1px;
 	}
 	
 	span.price{
 		float: right;
+		color: $color-two;
 	}	
 	
 }
@@ -27,14 +31,41 @@ div#product-info{
 	}
 	
 	img.selected{
-		border:4px solid #222;
+		border:4px solid $primary-button-color;
+	}
+
+	.sizes ul {overflow: hidden;}
+
+	.sizes li {
+		display: inline-block;
+		width: 60px; height: 60px;
+		float: left;
+	}
+	a.size {
+		display: block;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		font: $color-two 1.2em/1em $header-font-family;
+		background: $background3;
+		border: 4px solid #fff;
+		color: $body-font-color;
+	}
+
+	a.size:hover {
+		background: $color-one;
+		color: #fff;
+	}
+
+	a.size.selected {
+		border:4px solid $primary-button-color;
 	}
 }
 
 div#cart-confirm{
 	text-align: center;
 	
-	.button{
-		margin: .5rem;
+	.primary-button {
+		margin: 1rem;
 	}
 }

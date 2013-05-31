@@ -12,7 +12,7 @@ body {
 
 body {
   background: white;
-  color: #333333;
+  color: #2c2d2e;
   padding: 0;
   margin: 0;
   font-family: "Georgia", "Times New Roman", serif;
@@ -1090,7 +1090,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #333333;
+  color: #2c2d2e;
   border-bottom: 1px dotted #dddddd;
   cursor: help; }
 
@@ -3775,7 +3775,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #4b4331;
   padding: 2rem 0; }
   .section-style-two h1, .section-style-two h2, .section-style-two h3, .section-style-two h4, .section-style-two h5, .section-style-two h6 {
-    color: #4b4331;
+    color: #4b4331; }
+  .section-style-two h4, .section-style-two h5, .section-style-two h6 {
     margin-bottom: 0; }
   .section-style-two .photo {
     border: 5px solid white;
@@ -4055,21 +4056,46 @@ div#product-listing-page, div#product-detail-page {
 figure.product {
   background: #fff; }
   figure.product span.name {
-    float: left; }
+    float: left;
+    font-family: "Clarendon W01", "Georgia", serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
   figure.product span.price {
-    float: right; }
+    float: right;
+    color: #4b4331; }
 
 div#product-info section {
   margin-bottom: 2rem; }
 div#product-info img {
   border: 4px solid #fff; }
 div#product-info img.selected {
-  border: 4px solid #222; }
+  border: 4px solid #556675; }
+div#product-info .sizes ul {
+  overflow: hidden; }
+div#product-info .sizes li {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  float: left; }
+div#product-info a.size {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font: #4b4331 1.2em/1em "Clarendon W01", "Georgia", serif;
+  background: #ece8dc;
+  border: 4px solid #fff;
+  color: #2c2d2e; }
+div#product-info a.size:hover {
+  background: #de004b;
+  color: #fff; }
+div#product-info a.size.selected {
+  border: 4px solid #556675; }
 
 div#cart-confirm {
   text-align: center; }
-  div#cart-confirm .button {
-    margin: .5rem; }
+  div#cart-confirm .primary-button {
+    margin: 1rem; }
 
 div#checkout {
   margin: 2rem auto; }

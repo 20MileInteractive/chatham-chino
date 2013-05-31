@@ -24,8 +24,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 2rem 0;
 	h1, h2, h3, h4, h5, h6 {
 		color: $color-two;
+	}
+
+	h4,h5,h6 {
 		margin-bottom: 0;
 	}
+
 	.photo {
 		border: 5px solid rgb(255,255,255);
 		border: 5px solid rgba(255,255,255,0.5);

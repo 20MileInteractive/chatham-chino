@@ -8,8 +8,8 @@ $(document).ready(function(){
 			
 			$("a.size").on("click", function(event){
 				event.preventDefault();
-				$("a.size").children().removeClass("selected");
-				$(this).children().toggleClass("selected");
+				$("a.size").removeClass("selected");
+				$(this).toggleClass("selected");
 				
 			});
 			
