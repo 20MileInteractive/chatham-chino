@@ -3,9 +3,9 @@ div#checkout{
 	margin:2rem auto;
 	
 	.product{
-		background: #eee;
+		background: $background3;
 		padding: 1rem 0;
-		border:1px solid #ddd;
+		border-bottom:1px solid $color-two;
 		margin-bottom: 2rem;
 		
 		img{

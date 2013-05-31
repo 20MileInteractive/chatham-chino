@@ -9,7 +9,12 @@ header {
 		display: block;
 		margin: 1rem auto 0;
 
-		.logo {margin-bottom: 1rem;}
+		.logo {margin-bottom: 2rem;}
+		.tagline {
+			position: absolute;
+			bottom: -24px;
+			right: 0;
+		}
 	}
 
 	a.cart-link {
