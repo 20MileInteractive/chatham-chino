@@ -3777,11 +3777,17 @@ h1, h2, h3, h4, h5, h6 {
   .section-style-two h1, .section-style-two h2, .section-style-two h3, .section-style-two h4, .section-style-two h5, .section-style-two h6 {
     color: #4b4331; }
   .section-style-two h4, .section-style-two h5, .section-style-two h6 {
-    margin-bottom: 0; }
+    margin: .5em 0; }
   .section-style-two .photo {
     border: 5px solid white;
     border: 5px solid rgba(255, 255, 255, 0.5);
     margin-bottom: 1em; }
+
+img.flag {
+  height: 66px;
+  vertical-align: middle;
+  margin-left: 6px;
+  margin-top: -40px; }
 
 p.intro {
   font-size: 1.2em;
@@ -4149,9 +4155,13 @@ div#story-page {
   div#story-page :first-child {
     text-align: center; }
 
+.date-panels {
+  padding-top: 1em; }
+
 div.date-panel {
-  background: #ece8dc;
-  padding: 1rem 0; }
+  border: 3px double #ece8dc;
+  padding: 1rem 0;
+  background: #f9f7f3; }
 
 div.line {
   border-right: 5px solid #ece8dc;

@@ -4,11 +4,22 @@ div#story-page{
 	:first-child{
 		text-align: center;
 	}
+	// .title {
+	// 	background: url(../images/flag.png) no-repeat 65% 0;
+	// 	overflow: visible;
+	// 	background-size: contain;
+	// }
+
+}
+
+.date-panels {
+	padding-top: 1em;
 }
 
 div.date-panel{
-	background: $background3;
+	border: 3px double $background3;
 	padding: 1rem 0;
+	background: lighten($background3, 7%);
 }
 
 div.line{

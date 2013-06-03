@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	h4,h5,h6 {
-		margin-bottom: 0;
+		margin: .5em 0;
 	}
 
 	.photo {
@@ -45,6 +45,13 @@ h1, h2, h3, h4, h5, h6 {
 // 		// height: 18px; width: 18px;
 // 	}
 // }
+
+img.flag {
+	height: 66px; 
+	vertical-align: middle; 
+	margin-left: 6px;
+	margin-top: -40px;
+}
 
 p.intro {
 	font-size: 1.2em;
