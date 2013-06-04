@@ -3984,20 +3984,20 @@ footer p {
   font-family: "Clarendon W01", "Georgia", serif; }
 
 header {
-  background: url(../images/blue-fabric.jpg);
-  border-bottom: 2px solid #fff;
-  padding-bottom: .5rem; }
+  background: url(../images/blue-fabric2.jpg);
+  border-bottom: 2px solid #fff; }
   header a.logo-area {
     width: 300px;
     text-align: center;
     display: block;
     margin: 1rem auto 0; }
     header a.logo-area .logo {
-      margin-bottom: 2rem; }
-    header a.logo-area .tagline {
-      position: absolute;
-      bottom: -24px;
-      right: 0; }
+      margin-bottom: 3rem; }
+  header .tagline {
+    display: block;
+    position: absolute;
+    bottom: -22px;
+    right: 60px; }
   header a.cart-link {
     position: absolute;
     top: 0;

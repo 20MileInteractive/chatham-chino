@@ -1,7 +1,6 @@
 header {
-	background: url(../images/blue-fabric.jpg);
+	background: url(../images/blue-fabric2.jpg);
 	border-bottom: 2px solid #fff;
-	padding-bottom: .5rem;
 
 	a.logo-area {
 		width: 300px;
@@ -9,12 +8,14 @@ header {
 		display: block;
 		margin: 1rem auto 0;
 
-		.logo {margin-bottom: 2rem;}
-		.tagline {
-			position: absolute;
-			bottom: -24px;
-			right: 0;
-		}
+		.logo {margin-bottom: 3rem;}
+	}
+
+	.tagline {
+		display: block;
+		position: absolute;
+		bottom: -22px;
+		right: 60px;
 	}
 
 	a.cart-link {
