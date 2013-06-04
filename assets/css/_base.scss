@@ -2,6 +2,7 @@
 
 $color-one: #DE004B; //flag red
 $color-two: #4B4331; //dark brown
+$color-three: #74716E; //medium brown, text used over background3
 
 $primary-button-color: #556675; //gray-blue
 $primary-button-font-color: #fff;
@@ -53,6 +54,8 @@ img.flag {
 	margin-top: -40px;
 }
 
+.row.title {text-align: center; margin-top: 2em;}
+
 p.intro {
 	font-size: 1.2em;
 	margin-bottom: 1.5em;
@@ -68,8 +71,13 @@ blockquote {
 	color: $neutral-one;
 }
 
-
-th {font-family: $header-font-family; text-transform: uppercase; letter-spacing: 3px;}
+table.vertical th {text-align: right; vertical-align: top; font-size: .75em; }
+th {
+	font-family: $header-font-family; 
+	text-transform: uppercase; 
+	letter-spacing: 3px;
+	border-right: 3px solid #f1f1f1;}
+td, th {border-bottom: 1px solid #f1f1f1;}
 
 
 .test-button {

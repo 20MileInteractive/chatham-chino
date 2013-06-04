@@ -70,22 +70,28 @@
 
 
 <div id="checkout">
+
+<div class="row title">
+		<div class="large-12 columns">
+			<h3>Shopping Bag</h3>
+		</div>
+	</div>
+
 	<div class="row">	
 		<div class="small-10 columns small-centered">
 			<div class="product row">				
 				<div class="large-8 columns">
-						<a href="#" data-reveal-id="product-large"><img src="http://placehold.it/100x100&text=Image"/></a>
+						<a href="#" data-reveal-id="product-large"><img class="cart-thumb" src="http://placehold.it/100x100&text=Image"/></a>
 						<h5>Product Name</h5>
-						<p>Color: Navy<br/>
-						Size: Large
-						</p>
+						<ul class="product-specs">
+							<li><img src="assets/images/navy.png" alt="navy"></li>
+							<li><img src="assets/images/large.png" alt="large"></li>
+							<!-- <li class="quantity">Quantity: 1 <a href="#">Edit</a></li> -->
+						</ul>
 					</div>
 					<div class="large-4 columns">
-					<p>
-						Quantity: 1<br/>
-						<span>Change Quantity</span><br/>
-						<b>$78.00</b>
-					</p>
+						<h6>$78.00</h6>
+						<p class="quantity">Quantity: 1 <a href="#">Edit</a></p>
 					</div>
 					<a class="remove-button" href="#">&#215;</a>
 				</div>
@@ -102,18 +108,17 @@
 		<div class="small-10 columns small-centered">
 			<div class="product row">				
 				<div class="large-8 columns">
-						<a href="#" data-reveal-id="product-large"><img src="http://placehold.it/100x100&text=Image"/></a>
+						<a href="#" data-reveal-id="product-large"><img class="cart-thumb" src="http://placehold.it/100x100&text=Image"/></a>
 						<h5>Product Name</h5>
-						<p>Color: Navy<br/>
-						Size: Large
-						</p>
+						<ul class="product-specs">
+							<li><img src="assets/images/navy.png" alt="navy"></li>
+							<li><img src="assets/images/large.png" alt="large"></li>
+							<!-- <li class="quantity">Quantity: 1 <a href="#">Edit</a></li> -->
+						</ul>
 					</div>
 					<div class="large-4 columns">
-					<p>
-						Quantity: 1<br/>
-						<span>Change Quantity</span><br/>
-						<b>$78.00</b>
-					</p>
+						<h6>$78.00</h6>
+						<p class="quantity">Quantity: 1 <a href="#">Edit</a></p>
 					</div>
 					<a class="remove-button" href="#">&#215;</a>
 				</div>
@@ -128,14 +133,14 @@
 	</div>
 
 <div class="row">
-	<div id="proceed"class="large-3 large-offset-8 small-10 small-offset-1">
+	<div id="proceed" class="large-7 large-offset-4 small-10 small-offset-1">
 		<section>
-			Sub-Total:<b>$156</b>
+			<h5>Sub-Total:<b>$156</b></h5>
 		</section>
 
 		<section>
-			<a href="#" class="button">Proceed To Checkout</a>
-			<a href="listing.html" class="secondary button">Continue Shopping</a>
+			<a href="listing.html" class="secondary-button">Continue Shopping</a> <a href="#" class="primary-button">Proceed To Checkout</a>
+			
 		</section>						
 	</div>
 

@@ -3789,6 +3789,10 @@ img.flag {
   margin-left: 6px;
   margin-top: -40px; }
 
+.row.title {
+  text-align: center;
+  margin-top: 2em; }
+
 p.intro {
   font-size: 1.2em;
   margin-bottom: 1.5em; }
@@ -3799,10 +3803,19 @@ a:hover {
 blockquote {
   color: #43454c; }
 
+table.vertical th {
+  text-align: right;
+  vertical-align: top;
+  font-size: .75em; }
+
 th {
   font-family: "Clarendon W01", "Georgia", serif;
   text-transform: uppercase;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  border-right: 3px solid #f1f1f1; }
+
+td, th {
+  border-bottom: 1px solid #f1f1f1; }
 
 .test-button {
   background: #556675;
@@ -4110,18 +4123,44 @@ div#cart-confirm {
 div#checkout {
   margin: 2rem auto; }
   div#checkout .product {
-    background: #ece8dc;
+    background: #f9f7f3;
     padding: 1rem 0;
-    border-bottom: 1px solid #4b4331;
+    border: 3px double #ece8dc;
     margin-bottom: 2rem; }
-    div#checkout .product img {
+    div#checkout .product .cart-thumb {
       float: left;
       margin-right: 1rem; }
-    div#checkout .product span {
-      font-style: italic;
-      color: #2ba6cb; }
+    div#checkout .product p {
+      color: #74716e; }
+    div#checkout .product .product-specs {
+      margin: 0 0 1.0625em -1.375em;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      margin-left: 0; }
+      div#checkout .product .product-specs > li {
+        list-style: none;
+        float: left;
+        margin-left: 1.375em;
+        display: block; }
+        div#checkout .product .product-specs > li > * {
+          display: block; }
+    div#checkout .product .product-specs li {
+      margin-left: 0;
+      margin-right: .5em; }
+    div#checkout .product .quantity a {
+      background: #958e79;
+      font-size: .675em;
+      color: #e0e0ca;
+      display: inline-block;
+      padding: 2px 4px;
+      border-radius: 2px;
+      letter-spacing: 1px; }
+    div#checkout .product .quantity a:hover {
+      background: #ece8dc;
+      color: #958e79; }
   div#checkout a.remove-button {
-    background: #111;
+    background: #556675;
     color: #fff;
     height: 18px;
     width: 18px;
@@ -4133,15 +4172,16 @@ div#checkout {
     right: 0;
     margin-top: -6px;
     margin-right: -6px; }
+  div#checkout a.remove-button:hover {
+    background: #de004b; }
   div#checkout .undo {
     text-align: center;
     display: none; }
 
 div#proceed {
-  background: #ccc;
-  text-align: center; }
-  div#proceed section {
-    padding: 1rem; }
+  background: #ece8dc;
+  text-align: center;
+  padding: 1rem; }
   div#proceed .button {
     display: block; }
 
@@ -4152,8 +4192,6 @@ div#contact {
 
 div#story-page {
   margin: 2rem auto; }
-  div#story-page :first-child {
-    text-align: center; }
 
 .date-panels {
   padding-top: 1em; }
@@ -4162,6 +4200,15 @@ div.date-panel {
   border: 3px double #ece8dc;
   padding: 1rem 0;
   background: #f9f7f3; }
+  div.date-panel img.photo {
+    border: 2px solid #fff; }
+  div.date-panel p {
+    border-top: 1px solid #ECE8DC;
+    padding: .5em 1em;
+    font-style: italic;
+    color: #74716E; }
+  div.date-panel .date-photo, div.date-panel .date-text {
+    text-align: center; }
 
 div.line {
   border-right: 5px solid #ece8dc;

@@ -1,9 +1,5 @@
 div#story-page{
 	margin: 2rem auto;
-	
-	:first-child{
-		text-align: center;
-	}
 	// .title {
 	// 	background: url(../images/flag.png) no-repeat 65% 0;
 	// 	overflow: visible;
@@ -20,6 +16,19 @@ div.date-panel{
 	border: 3px double $background3;
 	padding: 1rem 0;
 	background: lighten($background3, 7%);
+
+	img.photo {border: 2px solid #fff;}
+
+	p {
+		border-top: 1px solid #ECE8DC;
+		padding: .5em 1em;
+		font-style: italic;
+		color: #74716E;
+	}
+
+	.date-photo, .date-text {
+		text-align: center;
+	}
 }
 
 div.line{

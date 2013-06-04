@@ -3,26 +3,50 @@ div#checkout{
 	margin:2rem auto;
 	
 	.product{
-		background: $background3;
+		background: lighten($background3, 7%);
 		padding: 1rem 0;
-		border-bottom:1px solid $color-two;
+		// border-bottom:1px solid $color-two;
+		border: 3px double $background3;
 		margin-bottom: 2rem;
 		
-		img{
+		.cart-thumb {
 			float: left;
 			margin-right: 1rem;
 		}
+
+		// h5 {border-bottom: 1px solid $background3;}
 		
-		span{
-		font-style: italic;
-		color: $link;
+		p {color: $color-three;}
+		
+		.product-specs {
+			@include inline-list;
+			margin-left: 0;
 		}
-		
-		
+
+		.product-specs li {
+			margin-left: 0;
+			margin-right: .5em;
+		}
+
+		.quantity a {
+			background: $secondary-button-color;
+			font-size: .675em;
+			color: $secondary-button-font-color;
+			display: inline-block;
+			padding: 2px 4px;
+			border-radius: 2px;
+			letter-spacing: 1px;
+		}
+
+		.quantity a:hover {
+			background: $background3;
+			color: $secondary-button-color;
+		}
+
 	}
 	
 	a.remove-button{
-		background: #111;
+		background: $primary-button-color;
 		color: #fff;
 		height: 18px;
 		width: 18px;
@@ -36,6 +60,10 @@ div#checkout{
 		margin-right: -6px;
 		
 	}
+
+	a.remove-button:hover {
+		background: $color-one;
+	}
 	
 	.undo{
 		text-align: center;
@@ -45,11 +73,11 @@ div#checkout{
 	
 }
 div#proceed{
-	background: #ccc;
+	background: $background3;
 	text-align: center;
-	
-	section{
 	padding:1rem;
+	section{
+	
 	}
 	
 	.button{
