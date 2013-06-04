@@ -71,7 +71,7 @@ blockquote {
 	color: $neutral-one;
 }
 
-table.vertical th {text-align: right; vertical-align: top; font-size: .75em; }
+table.vertical th {text-align: right; font-size: .75em; }
 th {
 	font-family: $header-font-family; 
 	text-transform: uppercase; 
@@ -79,6 +79,11 @@ th {
 	border-right: 3px solid #f1f1f1;}
 td, th {border-bottom: 1px solid #f1f1f1;}
 
+fieldset {
+	border: 3px double $background3;
+	padding: 1rem;
+	background: lighten($background3, 7%);
+}
 
 .test-button {
 background: #556675;

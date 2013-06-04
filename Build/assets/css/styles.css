@@ -3805,7 +3805,6 @@ blockquote {
 
 table.vertical th {
   text-align: right;
-  vertical-align: top;
   font-size: .75em; }
 
 th {
@@ -3816,6 +3815,11 @@ th {
 
 td, th {
   border-bottom: 1px solid #f1f1f1; }
+
+fieldset {
+  border: 3px double #ece8dc;
+  padding: 1rem;
+  background: #f9f7f3; }
 
 .test-button {
   background: #556675;
