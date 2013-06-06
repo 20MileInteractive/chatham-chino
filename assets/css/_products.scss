@@ -60,6 +60,11 @@ div#product-info{
 	a.size.selected {
 		border:4px solid $primary-button-color;
 	}
+
+	section.product-description ul {
+		margin-left: 2em;
+		list-style-position: inside;
+	}
 }
 
 div#cart-confirm{

@@ -4118,6 +4118,9 @@ div#product-info a.size:hover {
   color: #fff; }
 div#product-info a.size.selected {
   border: 4px solid #556675; }
+div#product-info section.product-description ul {
+  margin-left: 2em;
+  list-style-position: inside; }
 
 div#cart-confirm {
   text-align: center; }
@@ -4191,8 +4194,10 @@ div#proceed {
 
 div#contact {
   margin: 2rem auto; }
-  div#contact ul {
-    list-style-position: inside; }
+
+#contact-sidebar ul {
+  list-style-position: inside;
+  margin-left: 2em; }
 
 div#story-page {
   margin: 2rem auto; }
