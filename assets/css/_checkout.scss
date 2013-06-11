@@ -43,6 +43,11 @@ div#checkout{
 			color: $secondary-button-color;
 		}
 
+		.quantity input{
+			display:inline;
+			width:50px;
+		}
+
 	}
 	
 	a.remove-button{

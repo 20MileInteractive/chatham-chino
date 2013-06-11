@@ -4166,6 +4166,9 @@ div#checkout {
     div#checkout .product .quantity a:hover {
       background: #ece8dc;
       color: #958e79; }
+    div#checkout .product .quantity input {
+      display: inline;
+      width: 50px; }
   div#checkout a.remove-button {
     background: #556675;
     color: #fff;

@@ -32,4 +32,10 @@ $(document).ready(function(){
 								
 			});
 			
+			$("a#edit-quantity").on("click", function(event){
+				event.preventDefault();
+				$(this).parent().parent("div").children("p").show();
+				$(this).parent("p").hide();			
+			});
+
 	});
