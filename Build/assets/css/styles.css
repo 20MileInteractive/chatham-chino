@@ -4063,7 +4063,7 @@ div#nav-holder {
     display: inline-block; }
   #footer a:hover {
     color: #fff; }
-  #footer a.attribution {
+  #footer a.attribution, #footer span.copyright {
     color: #2F4666; }
 
 #hero {
