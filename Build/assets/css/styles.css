@@ -4063,6 +4063,8 @@ div#nav-holder {
     display: inline-block; }
   #footer a:hover {
     color: #fff; }
+  #footer a.attribution {
+    color: #2F4666; }
 
 #hero {
   text-align: center; }
