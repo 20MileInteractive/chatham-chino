@@ -3991,12 +3991,14 @@ header {
   background: url(../images/blue-fabric2.jpg);
   border-bottom: 2px solid #fff; }
   header a.logo-area {
-    width: 300px;
+    width: 207px;
+    height: 80px;
     text-align: center;
     display: block;
-    margin: 1rem auto 0; }
-    header a.logo-area .logo {
-      margin-bottom: 3rem; }
+    margin: 1rem auto 0;
+    background: url(../images/logo3.png);
+    background-repeat: no-repeat;
+    margin-bottom: 3rem; }
   header .tagline {
     display: block;
     position: absolute;
