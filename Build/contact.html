@@ -56,10 +56,12 @@
 
 <div id="nav-holder" class="clearfix">
 	<nav class="row">
-		<!-- @todo fix nav display on mobile -->
-
-		<!-- @todo add drop-down with men's categories: shirts & tops ; Pants & Shorts ; Gifts & Accessories -->
-		<a class="small-6 large-3 columns" href="listing.html">Men's Shop</a>
+		<a class="small-6 large-3 columns" href="listing.html" data-dropdown="men-categories">Men's Shop</a>
+		<ul id="men-categories" class="f-dropdown small" data-dropdown-content>
+			<li><a href="#">Shirts &amp; Tops</a></li>
+			<li><a href="#">Pants &amp; Shorts</a></li>
+			<li><a href="#">Gifts &amp; Accessories</a></li>
+		</ul>
 		<a class="small-6 large-3 columns" href="story.html">Story</a>
 		<a class="small-6 large-3 columns" href="blog.html">Journal</a>
 		<a class="current small-6 large-3 columns" href="contact.html">Contact</a>
