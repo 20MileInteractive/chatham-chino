@@ -28,24 +28,26 @@ div#checkout{
 			margin-right: .5em;
 		}
 
-		.quantity a {
-			background: $secondary-button-color;
-			font-size: .675em;
-			color: $secondary-button-font-color;
-			display: inline-block;
-			padding: 2px 4px;
-			border-radius: 2px;
-			letter-spacing: 1px;
-		}
+		.quantity {
+			a, button {
+				background: $secondary-button-color;
+				font-size: .675em;
+				color: $secondary-button-font-color;
+				display: inline-block;
+				padding: 2px 4px;
+				border-radius: 2px;
+				letter-spacing: 1px;
 
-		.quantity a:hover {
-			background: $background3;
-			color: $secondary-button-color;
-		}
+				&:hover {
+					background: $background3;
+					color: $secondary-button-color;
+				}
+			}
 
-		.quantity input{
-			display:inline;
-			width:50px;
+			input{
+				display:inline;
+				width:50px;
+			}
 		}
 
 	}
