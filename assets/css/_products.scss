@@ -1,6 +1,18 @@
 
-div#product-listing-page,div#product-detail-page{
+div#product-listing-page, div#product-detail-page{
 	margin: 2rem auto;
+}
+
+div#product-listing-page {
+	figcaption {
+		.name {
+			height: 50px;
+		}
+
+		.price {
+			text-align: right;
+		}
+	}
 }
 
 figure.product{
