@@ -8,6 +8,8 @@ $ ->
 		parent.find("a.selected").removeClass "selected"
 		$(@).addClass "selected"
 		parent.prev("input[type=hidden]").val( $(@).data("modifier-id") )
+		color_name = $(@).data('color-name')
+		$("#product-image-carousel li#" + color_name).click()
 
 	$("ul.modifiers a").on "click", selectProductModifier
 
@@ -36,3 +38,12 @@ $ ->
 		onReady: resizeCarouselAction
 
 	carousel = $("#product-image-carousel").elastislide carousel_options
+
+
+	removeItemFromCart = (evnt)->
+		evnt.preventDefault()
+		console.log $(@).data('key')
+		$(@).prev().find("input[type=text]").val(0)
+		$("form").submit()
+
+	$(".product a.remove-button").on "click", removeItemFromCart
