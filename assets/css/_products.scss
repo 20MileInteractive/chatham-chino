@@ -137,6 +137,26 @@ ul.modifiers {
 				background:#b29887;
 				span { display:none; }
 			} 
+			&.Coral {
+				background:#f48069;
+				span { display:none; }
+			} 
+			&.Yellow {
+				background:#f7e4ac;
+				span { display:none; }
+			} 
+			&.LtBlue {
+				background:#b8cfee;
+				span { display:none; }
+			}
+			&.NavyRedStripe {
+				background:url(../images/color_navy_red_stripe.jpg) 0 0 no-repeat;
+				span { display:none; }
+			}		
+			&.NavyBlueStripe {
+				background:url(../images/color_navy_blue_stripe.jpg) 0 0 no-repeat;
+				span { display:none; }
+			}
 		}
 	}
 }
