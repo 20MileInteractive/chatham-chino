@@ -8,6 +8,8 @@ $ ->
 		parent.find("a.selected").removeClass "selected"
 		$(@).addClass "selected"
 		parent.prev("input[type=hidden]").val( $(@).data("modifier-id") )
+		color_name = $(@).data('color-name')
+		$("#product-image-carousel li#" + color_name).click()
 
 	$("ul.modifiers a").on "click", selectProductModifier
 
