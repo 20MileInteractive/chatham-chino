@@ -38,3 +38,12 @@ $ ->
 		onReady: resizeCarouselAction
 
 	carousel = $("#product-image-carousel").elastislide carousel_options
+
+
+	removeItemFromCart = (evnt)->
+		evnt.preventDefault()
+		console.log $(@).data('key')
+		$(@).prev().find("input[type=text]").val(0)
+		$("form").submit()
+
+	$(".product a.remove-button").on "click", removeItemFromCart
