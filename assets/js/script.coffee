@@ -18,3 +18,10 @@ $ ->
 		$(@).parent("p").hide();		
 
 	$("a.edit-quantity").on "click", toggleItemQuantity
+
+
+	carousel_options =
+		start: 0
+		minItems: 3
+
+	carousel = $("#product-image-carousel").elastislide carousel_options
