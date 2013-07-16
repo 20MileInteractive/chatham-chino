@@ -81,7 +81,7 @@ ul.modifiers {
 			}
 
 			&.Navy {
-				background: #000099;
+				background: #2f3042;
 				span { display: none; }
 			}
 
@@ -89,6 +89,54 @@ ul.modifiers {
 				background: #e7194b;
 				span { display: none; }
 			}
+			&.LtGreen {
+				background:#aed1a9;
+				span { display:none; }
+			}
+			&.Royal {
+				background: #6497ce;
+				span { display:none; }
+			}
+			&.Raspberry {
+				background: #fe717a;
+				span { display:none; }
+			}
+			&.Chambray {
+				background: #bacae1;
+				span { display:none; }
+			}
+			&.Black {
+				background: #000;
+				span { display:none; }
+			}
+			&.White {
+				background: #fff;
+				span { display:none; }
+			}	
+			&.Pumpkin {
+				background: #ffb054;
+				span {display:none; }
+			}		
+			&.Mint {
+				background:#a2deaa;
+				span { display:none; }
+			}
+			&.IslandGreen {
+				background:#a9b09e;
+				span { display:none; }
+			}	
+			&.SurfBlue {
+				background:#617188;
+				span { display:none; }
+			}	
+			&.Stone {
+				background:#e2dfd8;
+				span { display:none; }
+			}
+			&.Khaki {
+				background:#b29887;
+				span { display:none; }
+			} 
 		}
 	}
 }
