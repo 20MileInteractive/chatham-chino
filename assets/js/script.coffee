@@ -19,9 +19,20 @@ $ ->
 
 	$("a.edit-quantity").on "click", toggleItemQuantity
 
+	selectProductImage = (el, pos, evt)->
+		evt.preventDefault()
+		el.siblings().removeClass("active")
+		el.addClass("active")
+		carousel.setCurrent( pos )
+		$(".product-spotlight img").attr('src', el.find("img").data("largeimg"))
+
+	resizeCarouselAction = ()->
+		$('#product-image-carousel li:eq(0)').addClass('active');
 
 	carousel_options =
 		start: 0
 		minItems: 3
+		onClick: selectProductImage
+		onReady: resizeCarouselAction
 
 	carousel = $("#product-image-carousel").elastislide carousel_options
