@@ -1,6 +1,12 @@
 $ ->
+
+	# Initialize Foundation
 	$(document).foundation()
-	# Write scripts here
+
+
+	##############################################################
+	# Product Detail scripts
+	##############################################################
 
 	selectProductModifier = (evnt)->
 		evnt.preventDefault()
@@ -8,18 +14,13 @@ $ ->
 		parent.find("a.selected").removeClass "selected"
 		$(@).addClass "selected"
 		parent.prev("input[type=hidden]").val( $(@).data("modifier-id") )
-		color_name = $(@).data('color-name')
-		$("#product-image-carousel li#" + color_name).click()
+		option_name = $(@).data('option-name')
+		
+		$("#product-image-carousel li").hide()
+		$("#product-image-carousel li[data-product-option='#{option_name}']").show()
+		$("#product-image-carousel li[data-product-option='#{option_name}']:first").click()
 
 	$("ul.modifiers a").on "click", selectProductModifier
-
-
-	toggleItemQuantity = (evnt)->
-		evnt.preventDefault()
-		$(@).parent().parent("div").children("p").show();
-		$(@).parent("p").hide();		
-
-	$("a.edit-quantity").on "click", toggleItemQuantity
 
 	selectProductImage = (el, pos, evt)->
 		evt.preventDefault()
@@ -40,6 +41,22 @@ $ ->
 	carousel = $("#product-image-carousel").elastislide carousel_options
 
 
+
+
+
+
+	##############################################################
+	# Cart page scripts
+	##############################################################
+
+	toggleItemQuantity = (evnt)->
+		evnt.preventDefault()
+		$(@).parent().parent("div").children("p").show();
+		$(@).parent("p").hide();		
+
+	$("a.edit-quantity").on "click", toggleItemQuantity
+
+
 	removeItemFromCart = (evnt)->
 		evnt.preventDefault()
 		console.log $(@).data('key')
@@ -47,3 +64,14 @@ $ ->
 		$("form").submit()
 
 	$(".product a.remove-button").on "click", removeItemFromCart
+
+
+
+	##############################################################
+	# Contact page scripts
+	##############################################################
+	submitContactFormAction = ()->
+		console.log "sent"
+		return false
+
+	$("form#contact-form").on "submit", submitContactFormAction
