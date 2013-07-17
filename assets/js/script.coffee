@@ -1,6 +1,12 @@
 $ ->
+
+	# Initialize Foundation
 	$(document).foundation()
-	# Write scripts here
+
+
+	##############################################################
+	# Product Detail scripts
+	##############################################################
 
 	selectProductModifier = (evnt)->
 		evnt.preventDefault()
@@ -15,14 +21,6 @@ $ ->
 		$("#product-image-carousel li[data-product-option='#{option_name}']:first").click()
 
 	$("ul.modifiers a").on "click", selectProductModifier
-
-
-	toggleItemQuantity = (evnt)->
-		evnt.preventDefault()
-		$(@).parent().parent("div").children("p").show();
-		$(@).parent("p").hide();		
-
-	$("a.edit-quantity").on "click", toggleItemQuantity
 
 	selectProductImage = (el, pos, evt)->
 		evt.preventDefault()
@@ -43,6 +41,22 @@ $ ->
 	carousel = $("#product-image-carousel").elastislide carousel_options
 
 
+
+
+
+
+	##############################################################
+	# Cart page scripts
+	##############################################################
+
+	toggleItemQuantity = (evnt)->
+		evnt.preventDefault()
+		$(@).parent().parent("div").children("p").show();
+		$(@).parent("p").hide();		
+
+	$("a.edit-quantity").on "click", toggleItemQuantity
+
+
 	removeItemFromCart = (evnt)->
 		evnt.preventDefault()
 		console.log $(@).data('key')
@@ -52,6 +66,10 @@ $ ->
 	$(".product a.remove-button").on "click", removeItemFromCart
 
 
+
+	##############################################################
+	# Contact page scripts
+	##############################################################
 	submitContactFormAction = ()->
 		console.log "sent"
 		return false
