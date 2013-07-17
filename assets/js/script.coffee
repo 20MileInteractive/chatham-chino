@@ -47,3 +47,10 @@ $ ->
 		$("form").submit()
 
 	$(".product a.remove-button").on "click", removeItemFromCart
+
+
+	submitContactFormAction = ()->
+		console.log "sent"
+		return false
+
+	$("form#contact-form").on "submit", submitContactFormAction
