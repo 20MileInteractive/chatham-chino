@@ -14,22 +14,47 @@
 	<div class="row">
 		<div class="large-6 columns">
 			<span class="product-spotlight">
-				<img id="product-image-spotlight" style="width: 100%;" src="http://placehold.it/470x470/e7194b/fff&text=red"/>
+				<img id="product-image-spotlight" style="width: 100%;" src="http://placehold.it/470x470/e7194b/fff&text=Red+1"/>
 			</span>
 			<ul id="product-image-carousel" class="elastislide-list">
-				<li id="related-Red">
+				<li data-product-option="Red">
 					<a href="#">
-						<img src="http://placehold.it/100x100/e7194b/fff&text=Red" data-largeimg="http://placehold.it/470x470/e7194b/fff&text=red" />
+						<img src="http://placehold.it/100x100/e7194b/fff&text=Red+1" data-largeimg="http://placehold.it/470x470/e7194b/fff&text=Red+1" />
 					</a>
 				</li>
-				<li id="related-Navy">
+				<li data-product-option="Red">
 					<a href="#">
-						<img src="http://placehold.it/100x100/2f3042/fff&text=Navy" data-largeimg="http://placehold.it/470x470/2f3042/fff&text=Navy" />
+						<img src="http://placehold.it/100x100/e7194b/fff&text=Red+2" data-largeimg="http://placehold.it/470x470/e7194b/fff&text=Red+2" />
 					</a>
 				</li>
-				<li id="related-LtGreen">
+				<li data-product-option="Red">
 					<a href="#">
-						<img src="http://placehold.it/100x100/aed1a9/fff&text=LtGreen" data-largeimg="http://placehold.it/470x470/aed1a9/fff&text=LtGreen" />
+						<img src="http://placehold.it/100x100/e7194b/fff&text=Red+3" data-largeimg="http://placehold.it/470x470/e7194b/fff&text=Red+3" />
+					</a>
+				</li>
+				<li data-product-option="Navy Blue">
+					<a href="#">
+						<img src="http://placehold.it/100x100/2f3042/fff&text=Navy Blue+1" data-largeimg="http://placehold.it/470x470/2f3042/fff&text=Navy Blue+1" />
+					</a>
+				</li>
+				<li data-product-option="Navy Blue">
+					<a href="#">
+						<img src="http://placehold.it/100x100/2f3042/fff&text=Navy Blue+2" data-largeimg="http://placehold.it/470x470/2f3042/fff&text=Navy Blue+2" />
+					</a>
+				</li>
+				<li data-product-option="Light Green">
+					<a href="#">
+						<img src="http://placehold.it/100x100/aed1a9/fff&text=Light Green+1" data-largeimg="http://placehold.it/470x470/aed1a9/fff&text=Light Green+1" />
+					</a>
+				</li>
+				<li data-product-option="Light Green">
+					<a href="#">
+						<img src="http://placehold.it/100x100/aed1a9/fff&text=Light Green+2" data-largeimg="http://placehold.it/470x470/aed1a9/fff&text=Light Green+2" />
+					</a>
+				</li>
+				<li data-product-option="Light Green">
+					<a href="#">
+						<img src="http://placehold.it/100x100/aed1a9/fff&text=Light Green+3" data-largeimg="http://placehold.it/470x470/aed1a9/fff&text=Light Green+3" />
 					</a>
 				</li>
 			</ul>
@@ -50,21 +75,22 @@
 			</section>
 			
 			<section>
-				<h6>Color: <span>{color}</span></h6>
-				<input type="hidden" name="modifier_1" />
+
+				<h6>Color: {color}</h6>
+				<input type="hidden" name="modifier_1" value="1" />
 				<ul class="modifiers">
 					<li>
-						<a class="Red" href="#" data-color-name="related-Red" data-modifier-id="1">
+						<a title="Red" href="#" data-option-name="Red" data-modifier-id="1" class="selected">
 							<span>Red</span>
 						</a>
 					</li>
 					<li>
-						<a class="Navy" href="#" data-color-name="related-Navy" data-modifier-id="2">
+						<a title="Navy Blue" href="#" data-option-name="Navy Blue" data-modifier-id="2">
 							<span>Navy</span>
 						</a>
 					</li>
 					<li>
-						<a class="LtGreen" href="#" data-color-name="related-LtGreen" data-modifier-id="3">
+						<a title="Light Green" href="#" data-option-name="Light Green" data-modifier-id="3">
 							<span>LtGreen</span>
 						</a>
 					</li>
@@ -72,21 +98,21 @@
 			</section>
 
 			<section>
-				<h6>Size:{size}</h6>
-				<input type="hidden" name="modifier_2" />
+				<h6>Size: {size}</h6>
+				<input type="hidden" name="modifier_2" value="1" />
 				<ul class="modifiers">
 					<li>
-						<a class="S" href="#" data-color-name="related-S" data-modifier-id="1">
+						<a title="S" data-option-name="S" href="#" data-modifier-id="1" class="selected">
 							<span>S</span>
 						</a>
 					</li>
 					<li>
-						<a class="M" href="#" data-color-name="related-M" data-modifier-id="2">
+						<a title="M" data-option-name="M" href="#" data-modifier-id="2">
 							<span>M</span>
 						</a>
 					</li>
 					<li>
-						<a class="L" href="#" data-color-name="related-L" data-modifier-id="3">
+						<a title="L" data-option-name="L" href="#" ata-modifier-id="3">
 							<span>L</span>
 						</a>
 					</li>
