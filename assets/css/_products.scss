@@ -85,11 +85,24 @@ ul.modifiers {
 				span { display: none; }
 			}
 
+			&[title="Navy Blue"] {
+				background: #2f3042;
+				span { display: none; }
+			}
+
 			&.Red {
 				background: #e7194b;
 				span { display: none; }
 			}
+			&[title="Red"] {
+				background: #e7194b;
+				span { display: none; }
+			}
 			&.LtGreen {
+				background:#aed1a9;
+				span { display:none; }
+			}
+			&[title="Light Green"] {
 				background:#aed1a9;
 				span { display:none; }
 			}
