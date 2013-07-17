@@ -8,13 +8,21 @@ $ ->
 	# Product Detail scripts
 	##############################################################
 
+	carousel_options =
+		start: 0
+		minItems: 3
+		onClick: selectProductImage
+		onReady: resizeCarouselAction
+
+	carousel = $("#product-image-carousel").elastislide carousel_options
+
 	selectProductModifier = (evnt)->
 		evnt.preventDefault()
 		parent = $(@).parent().parent()
 		parent.find("a.selected").removeClass "selected"
 		$(@).addClass "selected"
-		parent.prev("input[type=hidden]").val( $(@).data("modifier-id") )
 		option_name = $(@).data('option-name')
+		parent.prev("input[type=hidden]").val( $(@).data("modifier-id") ).prev("h6").children("span:first").text(option_name)
 		
 		$("#product-image-carousel li").hide()
 		$("#product-image-carousel li[data-product-option='#{option_name}']").show()
@@ -31,14 +39,6 @@ $ ->
 
 	resizeCarouselAction = ()->
 		$('#product-image-carousel li:eq(0)').addClass('active');
-
-	carousel_options =
-		start: 0
-		minItems: 3
-		onClick: selectProductImage
-		onReady: resizeCarouselAction
-
-	carousel = $("#product-image-carousel").elastislide carousel_options
 
 
 
