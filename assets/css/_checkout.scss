@@ -91,3 +91,25 @@ div#proceed{
 		display: block;
 	}
 }
+
+
+div#steps{
+	p.columns{
+		text-align:center;
+		
+		a{
+			color:#ddd;
+		}
+
+		a.current{
+		color:#888;
+	}		
+
+	}
+}
+
+#review-order{
+	.large-4:last-child{
+		background:#eee;
+	}
+}
