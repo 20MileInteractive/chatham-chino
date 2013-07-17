@@ -288,7 +288,43 @@ ul.modifiers {
 			&.MapNavy {
 				background: url(../images/MapNaturalNavy.jpg) 0 0 no-repeat;
 				span { display: none; }
-			}												
+			}		
+			&.LobsterGreen {
+				background: url(../images/LobsterGreen.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}		
+			&.BluefishSlate {
+				background: url(../images/BluefishSlate.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+			&.BassNantucketRed {
+				background: url(../images/BassNantucketRed.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}
+			&.SharkNantucketRed {
+				background: url(../images/SharkNantucketRed.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}						
+			&.SeagullBlue {
+				background: url(../images/SeagullBlue.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}
+			&.Navy64Knots {
+				background: url(../images/Navy64Knots.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}
+			&.Red64Knots {
+				background: url(../images/Red64Knots.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+			&.NavyLatLng {
+				background: url(../images/NavyLatLng.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+			&.WhiteCCLogo {
+				background: url(../images/WhiteCCLogo.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}																							
 		}
 	}
 }
