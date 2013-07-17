@@ -9,7 +9,10 @@ $ ->
 		$(@).addClass "selected"
 		parent.prev("input[type=hidden]").val( $(@).data("modifier-id") )
 		option_name = $(@).data('option-name')
-		$("#product-image-carousel li[data-product-option='#{option_name}']").click()
+		
+		$("#product-image-carousel li").hide()
+		$("#product-image-carousel li[data-product-option='#{option_name}']").show()
+		$("#product-image-carousel li[data-product-option='#{option_name}']:first").click()
 
 	$("ul.modifiers a").on "click", selectProductModifier
 
