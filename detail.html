@@ -2,7 +2,15 @@
 
 <!-- @include _header.html -->
 <div id="product-detail-page">
-
+	<div class="row">
+			<div class="large-12 columns">
+				<ul class="breadcrumbs">
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="<!-- @path listing.html -->">Men's Shop</a></li>
+				    <li><a href="<!-- @path listing.html -->">Shirts &amp; Tops</a></li>
+				</ul>
+			</div>
+	</div>
 	<div class="row">
 		<div class="large-6 columns">
 			<span class="product-spotlight">
@@ -42,7 +50,7 @@
 			</section>
 			
 			<section>
-				<h6>Choose Color</h6>
+				<h6>Color: <span>{color}</span></h6>
 				<input type="hidden" name="modifier_1" />
 				<ul class="modifiers">
 					<li>
@@ -64,7 +72,7 @@
 			</section>
 
 			<section>
-				<h6>Choose Size</h6>
+				<h6>Size:{size}</h6>
 				<input type="hidden" name="modifier_2" />
 				<ul class="modifiers">
 					<li>
