@@ -1,20 +1,65 @@
+window.carousel = null
+
 $ ->
 
 	# Initialize Foundation
 	$(document).foundation()
 
-
 	##############################################################
 	# Product Detail scripts
 	##############################################################
 
-	carousel_options =
-		start: 0
-		minItems: 3
-		onClick: selectProductImage
-		onReady: resizeCarouselAction
+	# Product gallery builder
+	setupProductGallery = ( product_images )->
 
-	carousel = $("#product-image-carousel").elastislide carousel_options
+		if window.carousel != null
+			window.carousel.destroy()
+			$("ul#product-image-carousel").remove()
+
+		selectProductImage = (el, pos, evt)->
+			evt.preventDefault()
+			el.siblings().removeClass("active")
+			el.addClass("active")
+			carousel.setCurrent( pos )
+			$(".product-spotlight img").attr('src', el.find("img").data("largeimg"))
+
+		resizeCarouselAction = ()->
+			$('#product-image-carousel li:eq(0)').addClass 'active'
+			$('#product-image-carousel li:eq(0)').click()
+
+		carousel_options =
+			start: 0
+			minItems: 3
+			onClick: selectProductImage
+			onReady: resizeCarouselAction
+
+		product_image_carousel = $('<ul id="product-image-carousel"></ul>')
+
+		product_images.each (index, elem)->
+			elem = $(elem)
+
+			product_option 	= elem.data "product-option"
+			image_src 		= elem.attr "src"
+			large_src 		= elem.data "largeimg"
+
+			image 		= new Image
+			image.src 	= image_src
+			image 		= $(image).data "largeimg", large_src
+
+			anchor 	= $('<a href="#"></a>')
+			anchor.append image
+
+			li 		= $('<li></li>')
+			li.data "product-option", product_option
+			li.append anchor
+
+			product_image_carousel.append li
+
+		$("span.product-spotlight").after(product_image_carousel)
+		window.carousel = $("#product-image-carousel").elastislide carousel_options
+
+	# Initial setup
+	setupProductGallery $("#product-option img")
 
 	selectProductModifier = (evnt)->
 		evnt.preventDefault()
@@ -24,21 +69,12 @@ $ ->
 		option_name = $(@).data('option-name')
 		parent.prev("input[type=hidden]").val( $(@).data("modifier-id") ).prev("h6").children("span:first").text(option_name)
 		
-		$("#product-image-carousel li").hide()
-		$("#product-image-carousel li[data-product-option='#{option_name}']").show()
-		$("#product-image-carousel li[data-product-option='#{option_name}']:first").click()
+		images = $("#product-option img[data-product-option='#{option_name}']")
+
+		if images.length > 0
+			setupProductGallery images
 
 	$("ul.modifiers a").on "click", selectProductModifier
-
-	selectProductImage = (el, pos, evt)->
-		evt.preventDefault()
-		el.siblings().removeClass("active")
-		el.addClass("active")
-		carousel.setCurrent( pos )
-		$(".product-spotlight img").attr('src', el.find("img").data("largeimg"))
-
-	resizeCarouselAction = ()->
-		$('#product-image-carousel li:eq(0)').addClass('active');
 
 
 
