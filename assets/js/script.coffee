@@ -89,7 +89,12 @@ $ ->
 		# Hook up product modifier
 		$("ul.modifiers a").on "click", selectProductModifier
 
-	
+		# Init pre-selected modifier label
+		$("h6 + select").each (index, elem)->
+			this_elem = $(elem)
+			this_elem.prev().children("span:first").text this_elem.children("option:first").text()
+
+
 	if $.contains( document.body, $("#product-detail-page").get()[0] )
 		productPageInit()
 
