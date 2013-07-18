@@ -10,10 +10,16 @@ div.row.blog-post{
 	aside{
 		color: #aaa;
 		transition: all .15s ease-in;
-	}
-	
-	aside:hover{
-		color: #666;
+		
+		&:hover{
+			color: #666;
+		}
+
+		td.journal-tags {
+			a {
+				text-transform: capitalize;
+			}
+		}
 	}
 }
 
