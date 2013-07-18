@@ -61,13 +61,21 @@ $ ->
 	# Initial setup
 	setupProductGallery $("#product-option img")
 
+
+	# Select product modifier action
 	selectProductModifier = (evnt)->
 		evnt.preventDefault()
 		parent = $(@).parent().parent()
 		parent.find("a.selected").removeClass "selected"
 		$(@).addClass "selected"
 		option_name = $(@).data('option-name')
-		parent.prev("input[type=hidden]").val( $(@).data("modifier-id") ).prev("h6").children("span:first").text(option_name)
+
+		parent.prev("select")
+			.val( $(@).data("modifier-id") ) # set the value to the selected id
+			.trigger("change")				 # fire the "change" event on the <select>, to trigger event listeners
+			.prev("h6")						 # \ 
+			.children("span:first")			 # -> update selected option label
+			.text(option_name)				 # /
 		
 		images = $("#product-option img[data-product-option='#{option_name}']")
 
