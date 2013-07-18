@@ -58,8 +58,6 @@ $ ->
 		$("span.product-spotlight").after(product_image_carousel)
 		window.carousel = $("#product-image-carousel").elastislide carousel_options
 
-	# Initial setup
-	setupProductGallery $("#product-option img")
 
 
 	# Select product modifier action
@@ -82,8 +80,18 @@ $ ->
 		if images.length > 0
 			setupProductGallery images
 
-	$("ul.modifiers a").on "click", selectProductModifier
 
+	# Product page constructor
+	productPageInit = ()->
+		# Init product gallery
+		setupProductGallery $("#product-option img")
+
+		# Hook up product modifier
+		$("ul.modifiers a").on "click", selectProductModifier
+
+	
+	if $.contains( document.body, $("#product-detail-page").get()[0] )
+		productPageInit()
 
 
 
