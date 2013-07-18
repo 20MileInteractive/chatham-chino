@@ -95,7 +95,6 @@ $ ->
 
 	removeItemFromCart = (evnt)->
 		evnt.preventDefault()
-		console.log $(@).data('key')
 		$(@).prev().find("input[type=text]").val(0)
 		$("form").submit()
 
@@ -107,7 +106,6 @@ $ ->
 	# Contact page scripts
 	##############################################################
 	submitContactFormAction = ()->
-		console.log "sent"
 		return false
 
 	$("form#contact-form").on "submit", submitContactFormAction
