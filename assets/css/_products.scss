@@ -26,6 +26,7 @@ figure.product{
 	span.price{
 		float: right;
 		color: $color-two;
+		font-family: $header-font-family;
 	}	
 	
 }
@@ -376,7 +377,30 @@ ul.modifiers {
 				background: url(../images/NaturalNavyStarfish.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-
+			&[title="Island Green Cap"] {
+				background: url(../images/IslandGreenHat.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+			&[title="Surf Blue Cap"] {
+				background: url(../images/SurfBlueHat.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+			&[title="White Cap"] {
+				background: url(../images/WhiteHat.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+			&[title="Navy Cap"] {
+				background: url(../images/NavyHat.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+			&[title="Khaki Cap"] {
+				background: url(../images/KhakiHat.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}
+			&[title="Red Cap"] {
+				background: url(../images/RedHat.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}			
 		}
 	}
 }
