@@ -10,12 +10,13 @@ div#checkout{
 			width: 40px;
 			height: 40px;
 			a {
+				background-size: 40px 40px;
 				height: 40px;
 				line-height: 40px;
 			}
 		}
 	}
-	
+
 	.product{
 		background: lighten($background3, 7%);
 		padding: 1rem 0;
