@@ -204,8 +204,8 @@ ul.modifiers {
 				background: url(../images/RedLobster.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&[title="Bass Canvas"] {
-				background: url(../images/BassCanvas.jpg) 0 0 no-repeat;
+			&[title="Bass Navy"] {
+				background: url(../images/BassNavy.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}			
 			&[title="Black Polo"] {
@@ -372,7 +372,10 @@ ul.modifiers {
 				background: url(../images/SoftGreenPolo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-
+			&[title="Natural Navy Starfish"] {
+				background: url(../images/NaturalNavyStarfish.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
 
 		}
 	}
