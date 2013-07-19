@@ -104,111 +104,115 @@ ul.modifiers {
 				background:#aed1a9;
 				span { display:none; }
 			}
-			&.Royal {
+			&[title="Royal"] {
 				background: #6497ce;
 				span { display:none; }
 			}
-			&.Raspberry {
+			&[title="Raspberry"] {
 				background: #fe717a;
 				span { display:none; }
 			}
-			&.Chambray {
+			&[title="Chambray"] {
 				background: #bacae1;
 				span { display:none; }
 			}
-			&.Black {
+			&[title="Black"] {
 				background: #000;
 				span { display:none; }
 			}
-			&.White {
+			&[title="White"] {
 				background: #fff;
 				span { display:none; }
 			}	
-			&.Pumpkin {
+			&[title="Pumpkin"] {
 				background: #ffb054;
 				span {display:none; }
 			}		
-			&.Mint {
+			&[title="Mint"] {
 				background:#a2deaa;
 				span { display:none; }
 			}
-			&.IslandGreen {
+			&[title="IslandGreen"] {
 				background:#a9b09e;
 				span { display:none; }
 			}	
-			&.SurfBlue {
+			&[title="SurfBlue"] {
 				background:#617188;
 				span { display:none; }
 			}	
-			&.Stone {
+			&[title="Stone"] {
 				background:#e2dfd8;
 				span { display:none; }
 			}
-			&.Khaki {
+			&[title="Khaki"] {
 				background:#b29887;
 				span { display:none; }
 			} 
-			&.Coral {
+			&[title="Coral"] {
 				background:#f48069;
 				span { display:none; }
 			} 
-			&.Yellow {
+			&[title="Yellow"] {
 				background:#f7e4ac;
 				span { display:none; }
 			} 
-			&.LtBlue {
+			&[title="Lt Blue"] {
 				background:#b8cfee;
 				span { display:none; }
 			}
-			&.NavyRedStripe {
+			&[title="Navy/Red Stripe"] {
 				background:url(../images/color_navy_red_stripe.jpg) 0 0 no-repeat;
 				span { display:none; }
 			}		
-			&.NavyBlueStripe {
+			&[title="Island Green Twill"] {
+				background:url(../images/IslandGreenTwill.jpg) 0 0 no-repeat;
+				span { display:none; }
+			}			
+			&[title="Navy/Blue Stripe"] {
 				background:url(../images/color_navy_blue_stripe.jpg) 0 0 no-repeat;
 				span { display:none; }
 			}	
-			&.BlueCapeCod {
+			&[title="Blue Cape Cod"] {
 				background: url(../images/BlueCapeCod.jpg) 0 0 no-repeat;
 				span { display:none; }
 			}	
-			&.RaspberryCapeCod {
+			&[title="Raspberry Cape Cod"] {
 				background: url(../images/RaspberryCapeCod.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.LtGreenCapeCod {
+			&[title="Lt Green Cape Cod"] {
 				background: url(../images/LtGreenCapeCod.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}		
-			&.RoyalCapeCod {
+			&[title="Royal Cape Cod"] {
 				background: url(../images/RoyalCapeCod.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.LtBlueCapeCod {
+			&[title="Lt Blue Cape Cod"] {
 				background: url(../images/LtBlueCapeCod.jpg) 0 0 no-repeat;
 				span { display:none; }
 			}								
-			&.NavyLobster {
+			&[title="Navy Lobster"] {
 				background: url(../images/NavyLobster.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}								
-			&.RedLobster {
+			&[title="Red Lobster"] {
 				background: url(../images/RedLobster.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.BassCanvas {
+			&[title="Bass Canvas"] {
 				background: url(../images/BassCanvas.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}			
-			&.BlackPolo {
+			&[title="Black Polo"] {
 				background: url(../images/BlackPolo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.WhitePolo {
+			&[title="White Polo"] {
 				background: url(../images/WhitePolo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.NavyPolo {
+			&[title="Navy Polo"] {
 				background: url(../images/NavyPolo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
@@ -216,126 +220,130 @@ ul.modifiers {
 				background: url(../images/NantucketRedPolo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.BlueGingham {
+			&[title="Blue Gingham"] {
 				background: url(../images/BlueGingham.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.NavyGingham {
+			&[title="Navy Gingham"] {
 				background: url(../images/NavyGingham.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}			
-			&.PumpkinGingham {
+			&[title="Pumpkin Gingham"] {
 				background: url(../images/PumpkinGingham.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.MintGingham {
+			&[title="Mint Gingham"] {
 				background: url(../images/MintGingham.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.CranberryGingham {
+			&[title="Cranberry Gingham"] {
 				background: url(../images/CranberryGingham.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}			
-			&.LatLngCapeCod {
+			&[title="Lat Lng Cape Cod"] {
 				background: url(../images/LatLngCapeCod.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.LatLngChatham {
+			&[title="Lat Lng Chatham"] {
 				background: url(../images/LatLngChatham.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}		
-			&.NavyHurricane {
+			&[title="Navy Hurricane"] {
 				background: url(../images/NavyHurricane.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.YellowHurricane {
+			&[title="Yellow Hurricane"] {
 				background: url(../images/YellowHurricane.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.CoralHurricane {
+			&[title="Coral Hurricane"] {
 				background: url(../images/CoralHurricane.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.LtBlueHurricane {
+			&[title="Lt Blue Hurricane"] {
 				background: url(../images/LtBlueHurricane.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.WhiteBlueStripe {
+			&[title="White/Blue Stripe"] {
 				background: url(../images/WhiteBlueStripe.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}		
-			&.BlueOxford {
+			&[title="Blue Oxford"] {
 				background: url(../images/BlueOxford.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}							
-			&.WhiteOxford {
+			&[title="White Oxford"] {
 				background: url(../images/WhiteOxford.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.BlueDenim {
+			&[title="Blue Denim"] {
 				background: url(../images/BlueDenim.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.BlueChino {
+			&[title="Blue Chino"] {
 				background: url(../images/BlueChino.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.KhakiChino {
+			&[title="Khaki Chino"] {
 				background: url(../images/KhakiChino.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.LighthouseNatural {
+			&[title="Lighthouse Natural"] {
 				background: url(../images/LighthouseNatural.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.SignalFlag {
+			&[title="Signal Flag"] {
 				background: url(../images/SignalFlag.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.RainbowFleet {
+			&[title="Rainbow Fleet"] {
 				background: url(../images/RainbowFleet.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.MapNavy {
+			&[title="Map Navy"] {
 				background: url(../images/MapNaturalNavy.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}		
-			&.LobsterGreen {
+			&[title="Lobster Green"] {
 				background: url(../images/LobsterGreen.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}		
-			&.BluefishSlate {
+			&[title="Bluefish Slate"] {
 				background: url(../images/BluefishSlate.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.BassNantucketRed {
+			&[title="Bass Nantucket Red"] {
 				background: url(../images/BassNantucketRed.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.SharkNantucketRed {
+			&[title="Shark Nantucket Red"] {
 				background: url(../images/SharkNantucketRed.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}						
-			&.SeagullBlue {
+			&[title="Seagull Blue"] {
 				background: url(../images/SeagullBlue.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.Navy64Knots {
+			&[title="Navy 64 Knots"] {
 				background: url(../images/Navy64Knots.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.Red64Knots {
+			&[title="Red 64 Knots"] {
 				background: url(../images/Red64Knots.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.NavyLatLng {
+			&[title="Navy Lat Lng"] {
 				background: url(../images/NavyLatLng.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
-			&.WhiteCCLogo {
+			&[title="White CC Logo"] {
 				background: url(../images/WhiteCCLogo.jpg) 0 0 no-repeat;
 				span { display: none; }
-			}																							
+			}	
+			&[title="Regatta Red"] {
+				background: url(../images/RegattaRed.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}																								
 		}
 	}
 }
