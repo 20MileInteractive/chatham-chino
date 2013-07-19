@@ -69,12 +69,14 @@ div#nav-holder {
 		font-size: emCalc(18px);
 		line-height: 19px;
 		letter-spacing: 3px;
+
 	}
 	
 	a:hover{
 		color: $color-one;
 		// background:#ddd;
 	}
+
 }
 
 @media only screen and (max-width: 48em) {
