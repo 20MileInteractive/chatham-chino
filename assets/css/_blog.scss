@@ -26,9 +26,11 @@ a.journal-tags {
 }
 
 p.byline{
-	color:#888;
+	color:$color-three;
 	border-bottom:1px solid #eee;
 	padding-bottom:.5rem;
+	text-transform: uppercase;
+	font-family: $header-font-family;
 }
 
 .sidebar {

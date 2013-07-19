@@ -1,7 +1,7 @@
 
 div#checkout{
 	margin:2rem auto;
-	
+	label {text-transform: uppercase;}
 	.product{
 		background: lighten($background3, 7%);
 		padding: 1rem 0;
@@ -94,22 +94,40 @@ div#proceed{
 
 
 div#steps{
+	border-bottom: 3px double $primary-button-color;
+	margin-bottom: 1rem;
+
 	p.columns{
 		text-align:center;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
 		
 		a{
 			color:#ddd;
+			padding-top: 2rem;
+			display: inline-block;
 		}
 
-		a.current{
+		a.current, a:hover {
 		color:#888;
-	}		
+		background: url(anchor-sm.png) no-repeat center 0;
+		color: $color-one;
+		}		
+
+		b {font-family: $header-font-family; text-transform: none; font-weight: normal;}
 
 	}
 }
 
 #review-order{
+	
 	.large-4:last-child{
-		background:#eee;
+		background:#f9f7f3;
+		padding-top: 1rem;
+		section {
+			padding: .5rem;
+		}
+		fieldset {border: none;
+		}
 	}
 }
