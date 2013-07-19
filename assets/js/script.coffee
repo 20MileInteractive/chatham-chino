@@ -106,14 +106,17 @@ $ ->
 	# Cart page scripts
 	##############################################################
 
+	# edit cart product quantities
 	toggleItemQuantity = (evnt)->
 		evnt.preventDefault()
-		$(@).parent().parent("div").children("p").show();
+		console.log "clicked"
+		$(@).parent().next().show();
 		$(@).parent("p").hide();		
 
 	$("a.edit-quantity").on "click", toggleItemQuantity
 
 
+	# remove from cart
 	removeItemFromCart = (evnt)->
 		evnt.preventDefault()
 		$(@).prev().find("input[type=text]").val(0)
