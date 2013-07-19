@@ -224,6 +224,10 @@ ul.modifiers {
 				background: url(../images/NantucketRedPolo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
+			&[title="Chambray Blue Polo"] {
+				background: url(../images/ChambrayBluePolo.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}
 			&[title="Blue Gingham"] {
 				background: url(../images/BlueGingham.jpg) 0 0 no-repeat;
 				span { display: none; }
@@ -348,6 +352,10 @@ ul.modifiers {
 				background: url(../images/WhiteCCLogo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
+			&[title="Lt Blue CC Logo"] {
+				background: url(../images/LtBlueCCLogo.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}				
 			&[title="Regatta Red"] {
 				background: url(../images/RegattaRed.jpg) 0 0 no-repeat;
 				span { display: none; }
@@ -356,6 +364,15 @@ ul.modifiers {
 				background: url(../images/LtBlueLifesaving.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}	
+			&[title="Barn Red Polo"] {
+				background: url(../images/BarnRedPolo.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+			&[title="Soft Green Polo"] {
+				background: url(../images/SoftGreenPolo.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+
 
 		}
 	}
