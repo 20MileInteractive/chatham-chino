@@ -124,6 +124,17 @@ $ ->
 
 	$(".product a.remove-button").on "click", removeItemFromCart
 
+	toggleShippingInfo = ()->
+		if @.checked
+			$('#shipping_details_drawer').slideUp()
+		else
+			$('#shipping_details_drawer').slideDown()
+
+	# toggle "same as billing" checkbox on shipping
+	$('#shipping_same_as_billing').on "change", toggleShippingInfo
+	if $('#shipping_same_as_billing').is(':checked')
+		$('#shipping_details_drawer').addClass "hide"
+
 
 
 	##############################################################
