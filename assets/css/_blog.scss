@@ -14,17 +14,15 @@ div.row.blog-post{
 		&:hover{
 			color: #666;
 		}
-
-		td.journal-tags {
-			a {
-				text-transform: capitalize;
-			}
-		}
 	}
 }
 
 .detail-page{
 	margin:1rem auto;
+}
+
+a.journal-tags {
+	text-transform: capitalize;
 }
 
 p.byline{
