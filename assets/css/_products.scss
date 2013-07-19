@@ -167,7 +167,11 @@ ul.modifiers {
 			&[title="Island Green Twill"] {
 				background:url(../images/IslandGreenTwill.jpg) 0 0 no-repeat;
 				span { display:none; }
-			}			
+			}	
+			&[title="Surf Blue Twill"] {
+				background:url(../images/SurfBlueTwill.jpg) 0 0 no-repeat;
+				span { display:none; }
+			}					
 			&[title="Navy/Blue Stripe"] {
 				background:url(../images/color_navy_blue_stripe.jpg) 0 0 no-repeat;
 				span { display:none; }
@@ -216,7 +220,7 @@ ul.modifiers {
 				background: url(../images/NavyPolo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
-			&.NantucketRedPolo {
+			&[title="Nantucket Red Polo"] {
 				background: url(../images/NantucketRedPolo.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
@@ -288,6 +292,10 @@ ul.modifiers {
 				background: url(../images/KhakiChino.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}
+			&[title="Stone Chino"] {
+				background: url(../images/StoneChino.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}			
 			&[title="Lighthouse Natural"] {
 				background: url(../images/LighthouseNatural.jpg) 0 0 no-repeat;
 				span { display: none; }
@@ -343,7 +351,12 @@ ul.modifiers {
 			&[title="Regatta Red"] {
 				background: url(../images/RegattaRed.jpg) 0 0 no-repeat;
 				span { display: none; }
-			}																								
+			}	
+			&[title="Light Blue Lifesaving"] {
+				background: url(../images/LtBlueLifesaving.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}	
+
 		}
 	}
 }
