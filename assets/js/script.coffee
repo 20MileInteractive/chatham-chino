@@ -126,7 +126,46 @@ $ ->
 	##############################################################
 	# Contact page scripts
 	##############################################################
+
+	contactFormResponseHandler = ( data )->
+		console.log data
+		$("input[type=text], textarea").removeClass("error")
+		$("label small").text('')
+		if data.success
+			$("form#contact-form").remove()
+			$("#thank-you-msg").removeClass "hide"
+		else
+			for k, v of data.errors
+				$("[name=#{k}]").addClass("error")
+								.prev("label")
+								.children("small")
+								.text(v)
+			
+
 	submitContactFormAction = ()->
+		url = @.action
+		if url !=""
+			params = $(@).serialize()
+			$.post url, params, contactFormResponseHandler
 		return false
 
 	$("form#contact-form").on "submit", submitContactFormAction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	############################ END #############################
