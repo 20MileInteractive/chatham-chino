@@ -1,32 +1,30 @@
-	<div class="row">	
-		<div class="small-10 columns small-centered">
-			<div class="product row">				
-				<div class="large-8 columns">
-						<h5><a href="<!-- @path detail.html -->">Product Name</a></h5>
-						<ul class="product-specs">
-							<li><img src="<!-- @path navy -->" alt="navy"></li>
-							<li><img src="<!-- @path large -->" alt="large"></li>
-							<!-- @todo should we use images for these? -->
-						</ul>
-					</div>
-					<div class="large-4 columns">
-						<p class="quantity">
-							Quantity: 1
-							<a id="edit-quantity" href="#">Edit</a>
-						</p>
-						<p class="hide quantity">Quantity: <input type="text" value="1"> <a id="edit-quantity" href="#">Save</a>
-						</p>
-						<h6>Price: $78.00</h6>
-						<h6>Subtotal: {price}x{quantity}</h6>						
-					</div>
-					<a class="remove-button" href="#">&#215;</a>
-				</div>
+<div class="row">	
+	<div class="small-10 columns small-centered">
+		<div class="product row">				
+			<div class="large-8 columns">
+				<h5><a href="<!-- @path detail.html -->">Product Name</a></h5>
+				<ul class="product-specs">
+					<li><img src="<!-- @path navy -->" alt="navy"></li>
+					<li><img src="<!-- @path large -->" alt="large"></li>
+					<!-- @todo should we use images for these? -->
+				</ul>
+			</div>
+			<div class="large-4 columns">
+				<p class="quantity">
+					Quantity: 1
+					<a id="edit-quantity" href="#">Edit</a>
+				</p>
+				<p class="hide quantity">Quantity: <input type="text" value="1"> <a id="edit-quantity" href="#">Save</a></p>
+				<h6>Price: $78.00</h6>
+				<h6>Subtotal: {price}x{quantity}</h6>						
+			</div>
+			<a class="remove-button" href="#">&#215;</a>
+		</div>
+	</div>		
+</div>
 
-			</div>		
-	</div>
-
-	<div class="row">	
-		<div class="undo small-10 columns small-centered">
+<div class="row">	
+	<div class="undo small-10 columns small-centered">
 		<p><b>Product Name</b> has been removed from your cart. <a id="undo" href="#"> Undo?</a></p>
-		</div>		
-	</div>
+	</div>		
+</div>
