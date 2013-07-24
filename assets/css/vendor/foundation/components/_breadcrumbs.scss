@@ -12,7 +12,7 @@ $crumb-side-padding: emCalc(12) !default;
 
 // We use these to control border styles.
 $crumb-function-factor: 10% !default;
-$crumb-border-size: 1px !default;
+$crumb-border-size: 0px !default;
 $crumb-border-style: solid !default;
 $crumb-border-color: darken($crumb-bg, $crumb-function-factor) !default;
 $crumb-radius: $global-radius !default;
