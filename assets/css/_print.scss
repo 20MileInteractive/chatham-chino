@@ -1,0 +1,15 @@
+.hidden {
+	display: none;
+}
+@media print {
+	.hidden {
+		display: block;
+	}
+	header a.logo-area {
+		width: auto;
+		height: auto;
+	}
+	header a.cart-link, #nav-holder, .breadcrumbs {
+		display: none;
+	}
+}
