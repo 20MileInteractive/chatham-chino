@@ -401,6 +401,28 @@ ul.modifiers {
 				background: url(../images/RedHat.jpg) 0 0 no-repeat;
 				span { display: none; }
 			}			
+
+			&[title="Red Koozie"] {
+				background: url(../images/RedKoozie.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}		
+			&[title="Navy Koozie"] {
+				background: url(../images/NavyKoozie.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}					
+			&[title="Green Koozie"] {
+				background: url(../images/GreenKoozie.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}		
+			&[title="Lt Blue Koozie"] {
+				background: url(../images/LtBlueKoozie.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}		
+			&[title="Purple Koozie"] {
+				background: url(../images/PurpleKoozie.jpg) 0 0 no-repeat;
+				span { display: none; }
+			}		
+
 		}
 	}
 }
