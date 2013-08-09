@@ -41,7 +41,7 @@ $f-dropdown-content-padding: emCalc(20) !default;
 // NOTE: Make default max-width change between list and content types. Can add more width with classes, maybe .small, .medium, .large, etc.;
 
 // We use this to style the dropdown container element.
-@mixin dropdown-container($content:list, $triangle:false, $max-width:$f-dropdown-max-width) {
+@mixin dropdown-container($content:list, $triangle:true, $max-width:$f-dropdown-max-width) {
   position: absolute;
   top: -9999px;
   list-style: $f-dropdown-list-style;
