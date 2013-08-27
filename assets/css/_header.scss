@@ -23,7 +23,7 @@ header {
 		margin: .5rem auto 1.5rem;
 	}
 
-	a.cart-link {
+	.cart-link {
 		position: absolute;
 		top: 0; right: 1rem;
 		padding: .7rem 1.5rem;
@@ -33,6 +33,13 @@ header {
 		color: #678297;
 		display: block;
 		width: auto; height: auto;
+		text-transform: uppercase;
+		font-family: $header-font-family;
+		letter-spacing: 1px;
+
+		span.smaller {font-size: emCalc(14px); border-top: 3px double #fff;}
+
+		a {transition: color 300ms; color: #fff;}
 
 		img {
 			vertical-align: middle;
@@ -41,9 +48,8 @@ header {
 
 	}
 
-	a.cart-link:hover {
-		background: lighten(rgb(1,21,38), 10%);
-		background: lighten(rgba(1,21,38,0.50), 10%);
+	.cart-link a:hover {
+		color: #678297;
 	}
 }
 
